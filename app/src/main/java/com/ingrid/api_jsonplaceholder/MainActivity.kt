@@ -52,28 +52,6 @@ class MainActivity : AppCompatActivity() {
                 txtResultado.text = "Erro no sistema. Alguém me desconfigurou"
             }
         })
-            /* val dataService:DataService = retrofit.create(DataService::class.java)
-            var edtCep = findViewById<EditText>(R.id.edtDados)
-            dataService.recuperDados(edtCep.text.toString()).enqueue(object: Callback<List<Foto?>> {
-
-                override fun onResponse(
-                    call: Call<Foto>,
-                    response: Response<Foto?>,
-                ) {
-                    if (response.isSuccessful()){
-                        var cep = response.body()
-                     /*  txtResultado.text=(( cep?.getCep()  ) +'-'+  cep?.getLogradouro() + '-'+ (cep?.getBairro()+ '-'
-                                + (cep?.getComplemento() +'-'
-                                + cep?.getLocalidade() +'/'+ cep?.getUf() )))*/
-                    }
-                }
-
-                override fun onFailure(call: Call<Foto>, t: Throwable) {
-                    Log.e("EnderecoRepository", "onFailure: falha ao buscar o endereço", t)
-                }
-
-            })
-        }*/
     }
     private fun bindView() {
         btnRecupera = findViewById(R.id.btnRecupera)
